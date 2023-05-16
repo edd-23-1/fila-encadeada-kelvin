@@ -1,0 +1,84 @@
+{
+  "tests": [
+    {
+      "name": "test_1",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest test/test_fila.py -k is_empty",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "test_2",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest test/test_fila.py -k is_full",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "test_3",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest test/test_fila.py -k enqueue",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "test_4",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest test/test_fila.py -k dequeue",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "test_5",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest test/test_fila.py -k peek_first",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test_6",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest test/test_fila.py -k peek_last",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test_7",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest test/test_fila.py -k size",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test_8",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest test/test_fila.py -k display",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    }
+  ]
+}

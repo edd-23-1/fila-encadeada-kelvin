@@ -14,14 +14,14 @@ class Fila:
     # retornar True se a fila estiver vazia e False caso contrário
     def is_empty(self) -> bool:
         # implementação do método
-        pass
+        return self.__inicio is None
 
 
     # verifica se a fila está cheia
     # retornar True se a fila estiver cheia e False caso contrário
     def is_full(self) -> bool:
         # implementação do método
-        pass
+        return self.__qtdItens == self.__capacidade
 
 
     # insere um elemento no final da fila e retorna True, se for possível

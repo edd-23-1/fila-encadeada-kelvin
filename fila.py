@@ -28,7 +28,18 @@ class Fila:
     # se a fila estiver cheia, lança uma exceção: raise Exception("mensagem de erro")
     def enqueue(self, valor) -> bool:
         # implementação do método
-        pass
+        if self.is_full():
+            raise Exception("Fila cheia")
+        novoNo = No(valor)
+        
+        if self.is_empty():
+            self.__inicio = novoNo
+            self.__fim = novoNo
+        else:
+            self.__fim.prox = novoNo
+            self.__fim = novoNo
+        self.__qtdItens += 1
+        return True
 
     
     # remove um elemento do início da fila e retorna esse elemento

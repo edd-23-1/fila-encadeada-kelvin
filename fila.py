@@ -77,7 +77,25 @@ class Fila:
     # que a fila está vazia e retorna uma lista vazia
     def display(self) -> list[str]:
         # implementação do método
-        pass
+        if self.is_empty():
+            print("A fila está vazia")
+            return []
+        
+        elementos = []
+        noAtual = self.__inicio
+
+        while noAtual is not None:
+            elementos.append(noAtual)
+            noAtual = noAtual.prox
+
+        print("Elementos da fila")
+        for i in range(len(elementos)):
+            print(elementos[i], end="")
+            if i != len(elementos) - 1:
+                print(" -> ", end="")
+
+        print()
+        return elementos
     
 
     # retorna a quantidade de elementos na fila

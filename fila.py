@@ -46,7 +46,16 @@ class Fila:
     # se a fila estiver vazia, lança uma exceção: raise Exception("mensagem de erro")
     def dequeue(self) -> No:
         # implementação do método
-        pass
+        if self.is_empty():
+            raise Exception("Fila vazia")
+        noRemovido = self.__inicio
+        self.__inicio = self.__inicio
+
+        if self.__inicio.prox is None:
+            self.fim = self.__inicio
+
+        self.__qtdItens -=1
+        return noRemovido 
 
 
     # retornar o primeiro elemento da fila sem removê-lo

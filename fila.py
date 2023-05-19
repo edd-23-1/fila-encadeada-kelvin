@@ -49,13 +49,12 @@ class Fila:
         if self.is_empty():
             raise Exception("Fila vazia")
         noRemovido = self.__inicio
-        self.__inicio = self.__inicio
+        self.__inicio = self.__inicio.prox
 
-        if self.__inicio.prox is None:
-            self.fim = self.__inicio
-
-        self.__qtdItens -=1
-        return noRemovido 
+        if self.__inicio is None:
+            self.__fim = None
+        self.__qtdItens -= 1
+        return noRemovido
 
 
     # retornar o primeiro elemento da fila sem removê-lo

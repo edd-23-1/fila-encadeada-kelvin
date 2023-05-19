@@ -53,14 +53,14 @@ class Fila:
     # se a fila estiver vazia retorna None
     def peek_first(self) -> No:
         # implementação do método
-        pass
+        return self.__inicio
 
 
     # retornar o último elemento da fila sem removê-lo
     # se a fila estiver vazia retorna None
     def peek_last(self) -> No:
         # implementação do método
-        pass
+        return self.__fim
 
 
     # retorna uma lista com a ordem dos elementos da fila

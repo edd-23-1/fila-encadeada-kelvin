@@ -85,7 +85,7 @@ class Fila:
         noAtual = self.__inicio
 
         while noAtual is not None:
-            elementos.append(noAtual)
+            elementos.append(str(noAtual)[6:])
             noAtual = noAtual.prox
 
         print("Elementos da fila")
@@ -95,6 +95,7 @@ class Fila:
                 print(" -> ", end="")
 
         print()
+
         return elementos
     
 
